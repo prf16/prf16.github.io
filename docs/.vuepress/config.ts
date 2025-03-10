@@ -13,15 +13,15 @@ export default defineUserConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/images/plume-1.svg' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/images/plume-1.svg' }],
-    ['script', { src: '<!-- Google tag (gtag.js) -->\n' +
-          '<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZPPLPB9FP"></script>\n' +
-          '<script>\n' +
-          '  window.dataLayer = window.dataLayer || [];\n' +
-          '  function gtag(){dataLayer.push(arguments);}\n' +
-          '  gtag(\'js\', new Date());\n' +
-          '\n' +
-          '  gtag(\'config\', \'G-NZPPLPB9FP\');\n' +
-          '</script>' }]
+    ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-NZPPLPB9FP' }],
+    ['script', {}, `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-NZPPLPB9FP');
+    `],
+    ['script', { async: true, src: 'https://busuanzi.ibruce.info/busuanzi.pure.mini.js' }]
   ],
 
   theme: plumeTheme({

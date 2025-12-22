@@ -4,7 +4,7 @@ externalLinkIcon: false
 config:
   -
     type: text-image
-    title: 格物、致知
+#    title: 格物、致知
     description: 在职业生涯中学习总结的地方，预计写四个系列：基础四大件系列、开发语言系列、中间件系列、开发案例系列。 
     image: /images/plume-1.svg
   -
@@ -54,6 +54,3 @@ config:
 - 计算机组成原理 2.1.1
 - 数据结构 1.2
 - Redis核心技术与实战 01 
-
-
-总访问量：<span id="busuanzi_value_site_pv"></span>

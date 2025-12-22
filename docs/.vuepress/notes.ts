@@ -93,12 +93,20 @@ const languagesGoNote = defineNoteConfig({
   link: '/languages/golang',
   sidebar: [
     '',
+    // {
+    //   text: 'Go语言核心36讲',
+    //   prefix: 'Go语言核心36讲',
+    //   collapsed: false,
+    //   items: [
+    //     '模块一：Go语言基础知识',
+    //   ],
+    // },
     {
-      text: 'Go语言核心36讲',
-      prefix: 'Go语言核心36讲',
+      text: 'Gin Web Framework',
+      prefix: 'Gin Web Framework',
       collapsed: false,
       items: [
-        '模块一：Go语言基础知识',
+        'Route 源码学习',
       ],
     },
   ]

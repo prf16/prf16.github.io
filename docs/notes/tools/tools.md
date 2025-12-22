@@ -24,14 +24,3 @@ permalink: /tools/
 title: tools
 createTime: 2024/12/16 10:25:09
 ---
-
-
-<LinkCard href="/">
-  <template #title>
-    <span style="color: red" >卡片标题</span>
-  </template>
-
-- 这里是卡片内容
-- 这里是卡片内容
-
-</LinkCard>

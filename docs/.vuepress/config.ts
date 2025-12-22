@@ -32,7 +32,7 @@ export default defineUserConfig({
     docsDir: 'docs',
     footer: {
       copyright: 'Copyright © 2024 - 2025 hxiaobao 版权所有 | <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2024102188号-1</a>',
-      content: 'Powered by <a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer">VuePress</a> & <a href="https://theme-plume.vuejs.press/" target="_blank" rel="noopener noreferrer">VuePress-theme-plume</a>',
+      message: 'Powered by <a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer">VuePress</a> & <a href="https://theme-plume.vuejs.press/" target="_blank" rel="noopener noreferrer">VuePress-theme-plume</a>',
     },
     plugins: {
       /**
@@ -48,14 +48,14 @@ export default defineUserConfig({
        * markdown enhance
        * @see https://theme-plume.vuejs.press/config/plugins/markdown-enhance/
        */
-      markdownEnhance: {
-        demo: true,
+      // markdownEnhance: {
+      //   demo: true,
       //   include: true,
       //   chart: true,
       //   echarts: true,
       //   mermaid: true,
       //   flowchart: true,
-      },
+      // },
 
       /**
        *  markdown power

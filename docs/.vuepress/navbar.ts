@@ -36,6 +36,14 @@ export const navbar = defineNavbarConfig([
     ],
     // icon:'map:wind-surfing',
   },
+  { 
+    text: '其他', 
+    items: [
+      { text: '英语', link: '/other/英语/README.md' },
+      { text: '政治', link: '/other/政治/README.md' },
+    ],
+    // icon:'map:wind-surfing',
+  },
   { text: '疑难问题', link: '/question/README.md', icon: 'wpf:faq' },
   { text: '在线导航', link: '/tools/', icon: 'fa-location-arrow' },
 ])

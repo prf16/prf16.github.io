@@ -1,6 +1,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+import { preserveAnnotationIndent } from './plugins/annotation-indent.mjs'
 
 export default defineUserConfig({
   base: '/',
@@ -9,6 +10,11 @@ export default defineUserConfig({
   description: '个人博客',
 
   bundler: viteBundler(),
+
+  plugins: [{
+    name: 'local-annotation-indent',
+    extendsMarkdown: preserveAnnotationIndent,
+  }],
 
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/images/plume-1.svg' }],
@@ -25,6 +31,9 @@ export default defineUserConfig({
   ],
 
   theme: plumeTheme({
+    markdown: {
+      annotation: true,
+    },
     // 添加您的部署域名
     // hostname: 'https://your_site_url',
     // your git repo url

@@ -189,6 +189,22 @@ const mianjingNote = defineNoteConfig({
   ]
 })
 
+const otheryy = defineNoteConfig({
+  dir: 'other/英语',
+  link: '/other/英语',
+  sidebar: [
+    '',
+    {
+      text: '阅读理解',
+      prefix: '阅读理解',
+      collapsed: false,
+      items: [
+        '如何当个好老师1',
+      ],
+    },
+  ],
+})
+
 
 export const notes = defineNotesConfig({
   dir: 'notes',
@@ -205,5 +221,6 @@ export const notes = defineNotesConfig({
     languagesGoNote,
     questionNote,
     mianjingNote,
+    otheryy,
   ],
 })
